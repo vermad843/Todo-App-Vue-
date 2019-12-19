@@ -13,3 +13,6 @@ Steps :Todo-App(Vue)
 
 [x]using bootswatch : https://bootswatch.com/4/minty/bootstrap.min.css
 
+
+[x] v-model : for updating newTodo under the hood
+

@@ -5,11 +5,12 @@
         <div class="form-group">
           <label for="newTodo">New Todo</label>
           <input
-             type="newTodo"
-             class="form-control"
-             id="newTodo"
-             aria-describedby="newTodoHelp"
-             placeholder="Enter Something"
+             v-model = "newTodo"
+             type ="newTodo"
+             class ="form-control"
+             id ="newTodo"
+             aria-describedby ="newTodoHelp"
+             placeholder ="Enter Something"
              >
           <small
              id="newTodoHelp"
@@ -31,7 +32,7 @@ export default {
   name: 'app',
     data () {
       return {
-
+         newTodo : '',
       }
     },
     methods : {
