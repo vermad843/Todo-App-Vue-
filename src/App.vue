@@ -32,6 +32,7 @@
            >
            <button
               @click = "markDone(todo)"
+              v-if = "!todo.done"
               type = "button"
               class = "btn btn-primary">
               done
