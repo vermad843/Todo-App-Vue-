@@ -60,6 +60,14 @@ export default {
          todos : []
       }
     },
+    watch : {
+       todos : {
+         handler()  {
+           localStorage.todos = JSON.stringify(this.todos);
+         },
+         deep : true
+       }
+    },
     methods : {
       addTodo() {
         this.todos.push({
@@ -71,8 +79,8 @@ export default {
       markDone(todo) {
         todo.done = true;
       },
-      remove(index) {
-         this.todos.splice(index , 1)
+      remove(i) {
+         this.todos.splice(i , 1)
       }
     }
   }

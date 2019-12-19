@@ -18,3 +18,14 @@ Steps :Todo-App(Vue)
 
 [x] v-if : for showing and hiding something(done button here);
 
+
+[x]watch : we use watch to see the changes happened to any property like : todos
+
+[x] deep : deep consider done button changes as well
+
+[x]for saving the data to localStorage(only store string)
+
+[x] stringify => convert array to a string;
+
+[x] parse  => convert string back to array;
+
