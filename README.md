@@ -16,3 +16,5 @@ Steps :Todo-App(Vue)
 
 [x] v-model : for updating newTodo under the hood
 
+[x] v-if : for showing and hiding something(done button here);
+

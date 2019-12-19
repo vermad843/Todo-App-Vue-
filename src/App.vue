@@ -27,7 +27,7 @@
       </form>
       <ul class = "list-group mt-4">
          <li
-            v-for = "todo in todos"
+            v-for = "(todo, i) in todos"
             class = "list-group-item"
            >
            <button
@@ -36,6 +36,13 @@
               type = "button"
               class = "btn btn-primary">
               done
+            </button>
+            <button
+               @click = "remove(i)"
+               type = "button"
+               class = "btn btn-danger"
+               >
+               delete
             </button>
             <span :class="{isDone : todo.done}">
                {{todo.title}}
@@ -63,6 +70,9 @@ export default {
       },
       markDone(todo) {
         todo.done = true;
+      },
+      remove(index) {
+         this.todos.splice(index , 1)
       }
     }
   }
