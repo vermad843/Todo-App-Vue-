@@ -30,6 +30,11 @@
             class = "list-group-item"
            >
            {{todo}}
+           <button
+              type = "button"
+              class = "btn btn-primary">
+              done
+            </button>
          </li>
       </ul>
   </div>
@@ -46,6 +51,7 @@ export default {
     methods : {
       addTodo() {
         this.todos.push(this.newTodo);
+        this.newTodo = ''
       }
     }
   }
