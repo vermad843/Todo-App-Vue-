@@ -1,7 +1,7 @@
 <template>
   <div id="app" class = "container">
       <h1 class = "text-center">Todo App</h1>
-      <form>
+      <form @submit.prevent = "addTodo()">
         <div class="form-group">
           <label for="newTodo">New Todo</label>
           <input
@@ -32,6 +32,11 @@ export default {
     data () {
       return {
 
+      }
+    },
+    methods : {
+      addTodo() {
+        console.log('form submitted')
       }
     }
   }
