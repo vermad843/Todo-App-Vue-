@@ -68,6 +68,11 @@ export default {
          deep : true
        }
     },
+    mounted()  {
+      if(localStorage.todos)  {
+        this.todos = JSON.parse(localStorage.todos);
+      }
+    },
     methods : {
       addTodo() {
         this.todos.push({
