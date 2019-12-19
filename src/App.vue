@@ -25,6 +25,13 @@
            Add Todo
         </button>
       </form>
+      <ul class = "list-group mt-4">
+         <li v-for = "todo in todos"
+            class = "list-group-item"
+           >
+           {{todo}}
+         </li>
+      </ul>
   </div>
 </template>
 <script>
@@ -33,11 +40,12 @@ export default {
     data () {
       return {
          newTodo : '',
+         todos : []
       }
     },
     methods : {
       addTodo() {
-        console.log('form submitted')
+        this.todos.push(this.newTodo);
       }
     }
   }
